@@ -1,0 +1,39 @@
+body	{
+	font-family: Lato, Helvetica, sans-serif;
+	font-size: 16px;
+	color: rgb(64, 64, 64);
+}
+
+.mojosCaption	{
+	font-size: 24px;
+	font-weight: 900;
+	padding: 5px;
+}
+
+.mojoListCaption, .mojoListCaptionElement	{
+	font-weight: 600;
+	color: rgb(255, 255, 255);
+	background-color: rgb(51, 102, 204);
+	padding: 5px;
+}
+
+.mojoList	{
+	border-collapse: collapse;
+}
+
+.mojoListRow, .mojoListRowElement	{
+	padding: 5px;
+}
+
+.mojoListRow:nth-child(even) {
+	background-color: rgb(242, 242, 242);
+}
+
+.mojoRef	{
+	color: inherit;
+	text-decoration-line: none;
+}
+.mojoRef:hover	{
+	color: rgb(255, 125, 66);
+	transition: all 700ms;
+}
