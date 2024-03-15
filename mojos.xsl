@@ -26,6 +26,9 @@
 									<xsl:attribute name="href">
 										<xsl:value-of select="file/text()"/>
 									</xsl:attribute>
+									<xsl:attribute name="href">
+										<xsl:value-of select="url/text()"/>
+									</xsl:attribute>
 									<xsl:value-of select="name/text()"/>-<xsl:value-of select="version/text()"/>.jar
 								</a>
 							</td>
