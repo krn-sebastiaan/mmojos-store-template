@@ -23,12 +23,16 @@
 							</xsl:attribute>
 							<td class="mojoListRowElement">
 								<a class="mojoRef">
-									<xsl:attribute name="href">
-										<xsl:value-of select="file/text()"/>
-									</xsl:attribute>
-									<xsl:attribute name="href">
-										<xsl:value-of select="url/text()"/>
-									</xsl:attribute>
+									<xsl:if test="file">
+										<xsl:attribute name="href">
+											<xsl:value-of select="file/text()"/>
+										</xsl:attribute>
+									</xsl:if>
+									<xsl:if test="url">
+										<xsl:attribute name="href">
+											<xsl:value-of select="url/text()"/>
+										</xsl:attribute>
+									</xsl:if>
 									<xsl:value-of select="name/text()"/>-<xsl:value-of select="version/text()"/>.jar
 								</a>
 							</td>
