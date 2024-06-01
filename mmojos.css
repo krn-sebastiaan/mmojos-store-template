@@ -4,36 +4,36 @@ body	{
 	color: rgb(64, 64, 64);
 }
 
-.mojosCaption	{
+.mMojosCaption	{
 	font-size: 24px;
 	font-weight: 900;
 	padding: 5px;
 }
 
-.mojoListCaption, .mojoListCaptionElement	{
+.mMojoListCaption, .mMojoListCaptionElement	{
 	font-weight: 600;
 	color: rgb(255, 255, 255);
 	background-color: rgb(51, 102, 204);
 	padding: 5px;
 }
 
-.mojoList	{
+.mMojoList	{
 	border-collapse: collapse;
 }
 
-.mojoListRow, .mojoListRowElement	{
+.mMojoListRow, .mMojoListRowElement	{
 	padding: 5px;
 }
 
-.mojoListRow:nth-child(even) {
+.mMojoListRow:nth-child(even) {
 	background-color: rgb(242, 242, 242);
 }
 
-.mojoRef	{
+.mMojoRef	{
 	color: inherit;
 	text-decoration-line: none;
 }
-.mojoRef:hover	{
+.mMojoRef:hover	{
 	color: rgb(255, 125, 66);
 	transition: all 700ms;
 }

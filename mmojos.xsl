@@ -4,25 +4,25 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<title>Mojos</title>
-				<link rel="stylesheet" href="mojos.css"/>
+				<title>mMojo's</title>
+				<link rel="stylesheet" href="mmojos.css"/>
 				<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
 			</head>
 			<body>
-				<div class="mojosCaption">Mojos</div>
-				<table class="mojoList">
-					<tr class="mojoListCaption">
-						<td class="mojoListCaptionElement">Name</td>	
-						<td class="mojoListCaptionElement">Version</td>
+				<div class="mMojosCaption">mMojo's</div>
+				<table class="mMojoList">
+					<tr class="mMojoListCaption">
+						<td class="mMojoListCaptionElement">Name</td>	
+						<td class="mMojoListCaptionElement">Version</td>
 					</tr>
-					<xsl:for-each select="registry/mojo">
+					<xsl:for-each select="registry/mmojo">
 						<xsl:sort select="name"/>
-						<tr class="mojoListRow">
+						<tr class="mMojoListRow">
 							<xsl:attribute name="id">
 								<xsl:value-of select="name/text()"/>
 							</xsl:attribute>
-							<td class="mojoListRowElement">
-								<a class="mojoRef">
+							<td class="mMojoListRowElement">
+								<a class="mMojoRef">
 									<xsl:if test="file">
 										<xsl:attribute name="href">
 											<xsl:value-of select="file/text()"/>
@@ -36,7 +36,7 @@
 									<xsl:value-of select="name/text()"/>-<xsl:value-of select="version/text()"/>.jar
 								</a>
 							</td>
-							<td class="mojoListRowElement">
+							<td class="mMojoListRowElement">
 								<xsl:value-of select="version/text()"/>
 							</td>
 						</tr>
